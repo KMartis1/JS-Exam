@@ -19,3 +19,33 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+function filterDogOwers(){
+    for (let user of users){
+      if (user.hasDog){
+        console.log(user)
+      }
+    }
+}
+
+filterDogOwers()
+
+console.log('===========<< O dabar masyve >>============')
+
+
+function filterAdults(){
+  let result = [];
+  for (let user of users){
+    if(user.age > 18){
+      result.push(user)
+    }
+  }
+  console.log(result)
+  return result
+
+// Arba su filter funkcija:
+  // let result = users.filter(user => user.age > 18);
+  // console.log(result);
+  // return result;
+}
+filterAdults()
