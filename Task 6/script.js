@@ -29,6 +29,15 @@ function getUserAverageAge(){
 }
 getUserAverageAge()
 
+console.log('')
+console.log('           <<  Sekantis - vardų masyvas  >>')
+
 function getUsersNames(){
-  
+  let nameArray = []
+  for (let user of users){
+    nameArray.push(user.name)
+  }
+  console.log(nameArray)
+  return nameArray
 }
+getUsersNames()
