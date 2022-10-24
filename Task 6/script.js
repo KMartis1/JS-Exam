@@ -20,14 +20,15 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-function getUserAverageAge(){
+function getUserAverageAge(users){
   let ageSum = 0
   for (let i = 0; i < users.length; i++){
     ageSum += users[i].age;
   }
   console.log(`Vidutinis vartotojų amžius: ${(ageSum / users.length).toFixed(2)}`)
 }
-getUserAverageAge()
+
+getUserAverageAge(users)
 
 console.log('')
 console.log('           <<  Sekantis - vardų masyvas  >>')
